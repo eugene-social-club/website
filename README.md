@@ -28,3 +28,25 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+### Inital Setup (Mac)
+1. Install homebrew [Link](https://brew.sh/)
+2. Now install Curl and Git `brew install coreutils curl git`
+3. Download asdf (or your preferred node version manager) `brew install asdf`
+4. Install asdf
+<details>
+<summary>Install asdf (mac)</summary>
+Note: If using macOS Catalina or newer, the default shell has changed to ZSH.
+
+[Link](https://asdf-vm.com/guide/getting-started.html)
+
+**ZSH & Homebrew Installation**: `echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc`
+</details>
+
+5. Install Node.js `asdf install nodejs latest`.
+6. Set the Node.js version `asdf global nodejs latest`
+7. Check the node version (`node -v`) and asdf global version (`asdf current`)
+8. Install dependancies `npm install`
+9. Run the App! `npm run dev`
+
+
